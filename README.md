@@ -27,6 +27,7 @@ it can save time and reduce manual mapping code.
 Key benefits of AutoMapper:
 
 Reduces repetitive mapping code
+
 Increases maintainability of your project
 
 #dotnet #csharp #AutoMapper #learning #programming #developers
