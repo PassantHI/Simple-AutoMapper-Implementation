@@ -20,11 +20,6 @@ namespace WebApplication1.Repository
             this.mapper = mapper;
         }
 
-        public async Task<RoomDTO> GetBy(Expression<Func<RoomDTO, bool>> expression, string include)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<RoomDTO> GetByIdAsync(int id)
         {
             return await context.Rooms.Where(a=>a.RoomID==id)
@@ -49,10 +44,5 @@ namespace WebApplication1.Repository
             return await context.SaveChangesAsync() > 0;
         }
 
-        public async Task<IEnumerable<RoomDTO>> FilterRooms(string country, int roomType)
-        {
-            return await context.Rooms.Where(a => a.Country == country || (int)a.RoomType == roomType)
-                .ProjectTo<RoomDTO>(mapper.ConfigurationProvider).ToListAsync();
-        }
     }
 }
