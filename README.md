@@ -7,12 +7,17 @@ it can save time and reduce manual mapping code.
 
 🔧 In this example, I demonstrate how to map between two models using AutoMapper with a few lines of code.
 
+🔄 Before and After with AutoMapper! 🚀
 
+
+
+📝 Before: Manually mapping object properties
 
 ![114](https://github.com/user-attachments/assets/8880b6b8-6101-4a1d-b92a-6c8b5f17e544)
 
 =====
 
+⚡ After: Clean and concise AutoMapper implementation
 
 ![115](https://github.com/user-attachments/assets/09877977-5f3b-4be7-94ec-defc1ee4588e)
 
