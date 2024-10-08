@@ -17,15 +17,13 @@ namespace WebApplication1
             builder.Services.AddDbContext<AppDBContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("cs"))
             );
-
+/////////////////////////////////////////////////////////////////////////////////////////////
             builder.Services.AddAutoMapper(typeof(Program));
+            ////////////////////////////////////////////////////////////
 
             builder.Services.AddScoped<IRoomRepository, RoomRepository>();  
 
             builder.Services.AddIdentity<ApplicationUser,IdentityRole>().AddRoles<IdentityRole>().AddEntityFrameworkStores<AppDBContext>();
-
-
-            builder.Services.AddScoped(typeof(IBaseReporitory<>), typeof(BaseRepository<>));
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
